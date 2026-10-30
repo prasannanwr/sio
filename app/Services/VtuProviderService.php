@@ -641,6 +641,9 @@ class VtuProviderService
                 'endpoint' => $endpointKey,
                 'status' => $response->status(),
                 'response' => $data,
+                'body' => $response->body(),
+                'url' => $url,
+                'method' => $method,
             ]);
 
             throw new RuntimeException(
